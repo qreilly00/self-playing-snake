@@ -1,1 +1,1 @@
-# self-playing-snake
+self-playing-snake
