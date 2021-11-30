@@ -21,7 +21,12 @@ private:
     std::vector<sf::FloatRect> playerBorders;
     int playerMoveDirection; // 0 = up, 1 = right, 2 = down, 3 = left;
     sf::Vector2f playerMoveAmount;
-    
+
+    int snakeSize;
+    std::vector<std::string> snakePath;
+    sf::Vector2f snakePathPos;
+    bool snakePathChosen;
+
     std::vector<BasicShape> collides;
 
 public:
