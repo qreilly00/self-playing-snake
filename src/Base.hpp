@@ -23,6 +23,7 @@ private:
     sf::Vector2f playerMoveAmount;
 
     int snakeSize;
+    std::vector<BasicShape> snakeBody;
     std::vector<std::string> snakePath;
     sf::Vector2f snakePathPos;
     bool snakePathChosen;

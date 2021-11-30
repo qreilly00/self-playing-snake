@@ -15,6 +15,10 @@ bool Base::gameLoop() {
     checkMoves();
     drawWindow();
 
+    if (snakeSize >= 100) {
+        exit = 1;
+    }
+
     //collides[0].getShape().setPosition(sf::Vector2f(ut.getRandomInt(0, int(snakePath[0].size() - 1) * 32), ut.getRandomInt(0, (snakePath.size() - 1) * 32)));
 
     playerMoveAmount = sf::Vector2f(0, 0);

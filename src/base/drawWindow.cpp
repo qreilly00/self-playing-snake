@@ -7,6 +7,7 @@ void Base::drawWindow() {
     window.clear(sf::Color::Black);
 
     for(auto x : collides) {window.draw(x.getShape());}
+    for(auto x : snakeBody) {window.draw(x.getShape());}
     /*for(auto x : rooms) {window.draw(x.getShape());}
     for(auto x : corridorsHigher) {window.draw(x.getShape());}
     for(auto x : corridorsMid) {window.draw(x.getShape());}

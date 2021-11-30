@@ -25,7 +25,7 @@ bool Base::checkControls() {
     if (snakePathChosen == 0) {
         char tmp = snakePath[snakePathPos.y][snakePathPos.x];
         if(tmp != '#') playerMoveDirection = tmp - 48;
-        std::cout << snakePath[snakePathPos.y][snakePathPos.x] << std::endl;
+        //std::cout << snakePath[snakePathPos.y][snakePathPos.x] << std::endl;
 
         if(playerMoveDirection == 0) {
             snakePathPos.y -= 1;
